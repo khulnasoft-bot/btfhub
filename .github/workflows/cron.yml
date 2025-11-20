@@ -37,7 +37,7 @@ jobs:
         shell: bash
       #
       - name: Checkout BTFHub
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           repository: khulnasoft/btfhub
           submodules: recursive
@@ -70,7 +70,7 @@ jobs:
         shell: bash
       #
       - name: Checkout BTFHub Archive
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           repository: khulnasoft/btfhub-archive
           token: ${{ secrets.GEYSLAN_BTFHUB_PAT }}
@@ -133,7 +133,7 @@ jobs:
         shell: bash
       #
       - name: Checkout BTFHub
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           repository: khulnasoft/btfhub
           path: ./btfhub
@@ -145,7 +145,7 @@ jobs:
           from: cron
       #
       - name: Checkout BTFHub Archive
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           repository: khulnasoft/btfhub-archive
           token: ${{ secrets.GEYSLAN_BTFHUB_PAT }}
